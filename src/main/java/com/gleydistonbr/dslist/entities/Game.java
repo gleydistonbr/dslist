@@ -23,25 +23,29 @@ public class Game {
 	private String genre;
 	private String platforms;
 	private Double score;
-	private String imgUri;
-	private String shortDescription;
-	private String longDescription;
+	private String img_Url;
+	
+	@Column(columnDefinition = "TEXT")
+	private String short_Description;
+	
+	@Column(columnDefinition = "TEXT")
+	private String long_Description;
 
 	public Game() {
 		
 	}
 
-	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUri,
-			String shortDescription, String longDescription) {
+	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String img_url,
+			String short_Description, String long_Description) {
 		this.id = id;
 		this.title = title;
 		this.year = year;
 		this.genre = genre;
 		this.platforms = platforms;
 		this.score = score;
-		this.imgUri = imgUri;
-		this.shortDescription = shortDescription;
-		this.longDescription = longDescription;
+		this.img_Url = img_Url;
+		this.short_Description = short_Description;
+		this.long_Description = long_Description;
 	}
 
 	public Long getId() {
@@ -93,27 +97,27 @@ public class Game {
 	}
 
 	public String getImgUri() {
-		return imgUri;
+		return img_Url;
 	}
 
 	public void setImgUri(String imgUri) {
-		this.imgUri = imgUri;
+		this.img_Url = img_Url;
 	}
 
 	public String getShortDescription() {
-		return shortDescription;
+		return short_Description;
 	}
 
-	public void setShortDescription(String shortDescription) {
-		this.shortDescription = shortDescription;
+	public void setShortDescription(String short_Description) {
+		this.short_Description = short_Description;
 	}
 
 	public String getLongDescription() {
-		return longDescription;
+		return long_Description;
 	}
 
 	public void setLongDescription(String longDescription) {
-		this.longDescription = longDescription;
+		this.long_Description = long_Description;
 	}
 
 	@Override
