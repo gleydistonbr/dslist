@@ -17,11 +17,11 @@ public class GameMinDTO {
 	
 	public GameMinDTO(Game entity) {
 
-		this.id = entity.getId();
-		this.title = entity.getTitle();
-		this.year = entity.getYear();
-		this.img_Url = entity.getImgUri();
-		this.short_Description = entity.getShortDescription();
+		id = entity.getId();
+		title = entity.getTitle();
+		year = entity.getYear();
+		img_Url = entity.getImgUri();
+		short_Description = entity.getShortDescription();
 	}
 
 	public Long getId() {
