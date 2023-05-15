@@ -23,29 +23,29 @@ public class Game {
 	private String genre;
 	private String platforms;
 	private Double score;
-	private String img_Url;
+	private String imgUrl;
 	
 	@Column(columnDefinition = "TEXT")
-	private String short_Description;
+	private String shortDescription;
 	
 	@Column(columnDefinition = "TEXT")
-	private String long_Description;
+	private String longDescription;
 
 	public Game() {
 		
 	}
 
-	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String img_url,
-			String short_Description, String long_Description) {
+	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgurl,
+			String shortDescription, String longDescription) {
 		this.id = id;
 		this.title = title;
 		this.year = year;
 		this.genre = genre;
 		this.platforms = platforms;
 		this.score = score;
-		this.img_Url = img_Url;
-		this.short_Description = short_Description;
-		this.long_Description = long_Description;
+		this.imgUrl = imgurl;
+		this.shortDescription = shortDescription;
+		this.longDescription = longDescription;
 	}
 
 	public Long getId() {
@@ -96,28 +96,28 @@ public class Game {
 		this.score = score;
 	}
 
-	public String getImgUri() {
-		return img_Url;
+	public String getImgUrl() {
+		return imgUrl;
 	}
 
-	public void setImgUri(String imgUri) {
-		this.img_Url = img_Url;
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
 	}
 
 	public String getShortDescription() {
-		return short_Description;
+		return shortDescription;
 	}
 
-	public void setShortDescription(String short_Description) {
-		this.short_Description = short_Description;
+	public void setShortDescription(String shortDescription) {
+		this.shortDescription = shortDescription;
 	}
 
 	public String getLongDescription() {
-		return long_Description;
+		return longDescription;
 	}
 
 	public void setLongDescription(String longDescription) {
-		this.long_Description = long_Description;
+		this.longDescription = longDescription;
 	}
 
 	@Override
